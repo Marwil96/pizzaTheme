@@ -1,0 +1,251 @@
+@import "common/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+/**
+ * Import npm dependencies
+ *
+ * Prefix your imports with `~` to grab from node_modules/
+ * @see https://github.com/webpack-contrib/sass-loader#imports
+ */
+// @import "~some-node-module";
+
+/** Import theme styles */
+@import "common/global";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+body {
+	margin:0;
+	padding:0;
+}
+.App {
+	min-height:100vh;
+	background:#f5f5f5;
+	display:flex;
+	flex-direction:column;
+	font-family: 'Poppins', sans-serif;
+}
+.navBar {
+	height: 8vh;
+	position: fixed;
+	width:92%;
+	display:flex;
+	align-self: center;
+	justify-content:space-between;
+	color:white;
+	font-size:24px;
+	font-family: 'Poppins', sans-serif;
+	cursor:pointer;
+	
+	div {
+		h3 {
+			padding:16px;
+			cursor:pointer;
+		}
+		h3:hover {
+			color: #ececec;
+		}
+		h1:hover {
+			color: #ececec;
+		}
+
+		width:30%;
+		display:flex;
+	    justify-content: space-between;
+	}
+}
+.mainPage {
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	// background: url(../images/baked-beer-cheese-724216.png) no-repeat center center fixed;
+	background: url(https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.rubrikMainPage {
+	h1 {
+		span {
+			color: #FF8383;
+		}
+
+		line-height: 1.1;
+		font-size:85px;
+		text-align: center;
+	}
+
+	color: white;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 56px;
+}
+.menuPage {
+	min-height: 100vh;
+	width:100%;
+	justify-content: center;
+	display:flex;
+}
+.menu {
+	.flikMenu {
+		.activeFlik {
+			background:#FF2C2C;
+		}
+
+		.flik {
+			h3 {
+				color:white;
+				font-size:24px;	
+			}
+
+			background:#D12929;
+			cursor:pointer;
+			width:20%;
+			height:60px;
+			border-radius: 12px 12px 0 0;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		height:8%;
+		font-family: 'Poppins', sans-serif;
+		margin-top:-60px;
+		display:flex;
+	}
+
+	width: 70%;
+	margin-top:10%;
+	background: #FF2C2C;
+	transition: all 0.5s ease-in-out;
+	border-radius: 0 16px 16px 16px;
+}
+.menuSlideUp {
+	margin-top: -5%;
+}
+.menuListSubHeader {
+	h1 {
+		font-size:32px;
+		margin:0;
+		width:70%;
+	}
+	h2 {
+		font-size: 16px;
+		margin:0 0 4px 0;
+		font-weight:300;
+	}
+	h3 {
+		margin:0;
+		font-size: 20px;
+		font-weight:300;
+		align-self:flex-end;
+	}
+	div {
+	display: flex;
+    justify-content: space-between;
+    width: 30%;
+    right: 0;
+    font-weight: 100;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin-bottom:4px;
+    justify-self: flex-end;
+	}
+
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 3px solid white;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.menuListContainer {
+	h1 {
+		font-size:20px;
+		margin:0;
+	}
+	h2 {
+		font-size: 16px;
+		font-weight:400;
+		margin:0;
+	}
+	.menuDescriptionContainer {
+		width:98%;
+		align-self:center;
+	}
+	.priceContainer {
+	display: flex;
+    margin: 0;
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+	}
+	.price {
+		align-self:center;
+		margin:0;
+	}
+
+	width:80%;
+	height: 66px;
+	margin-right: auto;
+    margin-left: auto;
+    color:white;
+	display:flex;
+	flex-direction:row;
+	font-family: 'Poppins', sans-serif;
+	justify-content:flex-start;
+	border-bottom: 3px dotted white;
+}
+.aboutPage {
+	span {
+		margin-bottom:16px;
+	}
+	h1 {
+		font-size:48px;	
+		text-align:center;
+	}
+	h2 {
+		font-size:28px;
+		text-align:center;
+		font-weight:300;
+		margin:0;
+	}
+	h3 {
+		font-size:36px;
+		text-align:center;
+		margin:0;
+	}
+
+	height:100vh;
+	background:#FF2C2C;
+	margin-top:5vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:white;
+}
+#kebabMenu {
+	display:none;
+}

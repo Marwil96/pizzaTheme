@@ -1,0 +1,50 @@
+// TODO: .banner .nav li {}
+// TODO: .banner .nav a {}
+
+h1 {
+  color: $fontPrimary;
+}
+
+.cardContainer {
+  margin-top: 3%;
+  width: 85%;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardImage {
+  height: 45%;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  background: blue;
+  object-fit: cover;
+}
+.card {
+  height: 305px;
+  width:321px;
+  border-radius:16px;
+  background: white;
+  box-shadow: 1px 1px 7px #0000001f;
+  margin-top: 16px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.cardTextContainer {
+  padding: 10px;
+}
+.bigHeader {
+  font-size: 300%;
+  margin-top:5%;
+  margin-bottom: 0;
+  margin-left: 7.5%;
+}
+.smallHeader {
+  margin-top:16px;
+  width: 40%;
+  font-size: 200%;
+  margin-bottom: 0;
+  margin-right:0;
+  margin-left: 7.5%;
+}
